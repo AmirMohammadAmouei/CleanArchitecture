@@ -6,17 +6,17 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Queries.GetAllLeaveT
 {
     public class GetLeaveTypesQueryHandler : IRequestHandler<GetLeaveTypesQuery, List<LeaveTypeDto>>
     {
-        private readonly ILeavTypeRepository _leaveTypeRepository;
+        private readonly ILeaveTypeRepository _leaveTypeRepository;
         private readonly IMapper _mapper;
 
-        public GetLeaveTypesQueryHandler(ILeavTypeRepository leaveTypeRepository, IMapper mapper)
+        public GetLeaveTypesQueryHandler(ILeaveTypeRepository leaveTypeRepository, IMapper mapper)
         {
             _leaveTypeRepository = leaveTypeRepository;
             _mapper = mapper;
         }
         public async Task<List<LeaveTypeDto>> Handle(GetLeaveTypesQuery request, CancellationToken cancellationToken)
         {
-            //Get query from database
+            //Get List of LeaveType from database
             var leaveTypes = await _leaveTypeRepository.GetAsync();
 
             //Convert data object to DTO object
