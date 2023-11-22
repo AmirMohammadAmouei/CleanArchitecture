@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using HR.LeaveManagement.Application.Contracts.Persistence;
+using HR.LeaveManagement.Application.Exceptions;
 using MediatR;
 
 namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeaveType
@@ -19,6 +20,11 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeave
         {
 
             //validate incoming data
+            var validator = new CreateLeaveTypeCommandValidator(_leaveTypeRepository);
+            var validationResult = await validator.ValidateAsync(request);
+
+            if (validationResult.Errors.Any())
+                throw new BadRequestException("Invalid leave type", validationResult);
 
             //convert DTO data to domain data to save in database
             var leaveTypeToCreate = _mapper.Map<Domain.LeaveType>(request);
