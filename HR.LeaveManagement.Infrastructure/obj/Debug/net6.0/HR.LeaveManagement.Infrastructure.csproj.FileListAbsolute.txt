@@ -1,0 +1,17 @@
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\bin\Debug\net6.0\HR.LeaveManagement.Infrastructure.deps.json
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\bin\Debug\net6.0\HR.LeaveManagement.Infrastructure.dll
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\bin\Debug\net6.0\HR.LeaveManagement.Infrastructure.pdb
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\bin\Debug\net6.0\HR.LeaveManagement.Application.dll
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\bin\Debug\net6.0\HR.LeaveManagement.Domain.dll
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\bin\Debug\net6.0\HR.LeaveManagement.Application.pdb
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\bin\Debug\net6.0\HR.LeaveManagement.Domain.pdb
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.csproj.AssemblyReference.cache
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.AssemblyInfoInputs.cache
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.AssemblyInfo.cs
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.csproj.CoreCompileInputs.cache
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.csproj.CopyComplete
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.dll
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\refint\HR.LeaveManagement.Infrastructure.dll
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.pdb
+F:\CleanArchitectureProject\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\ref\HR.LeaveManagement.Infrastructure.dll

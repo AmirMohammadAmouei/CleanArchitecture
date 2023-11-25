@@ -12,7 +12,7 @@ namespace HR.LeaveManagement.Persistence.Configurations
 
                 new LeaveType
                 {
-                    Id = 0,
+                    Id = 1,
                     Name = "",
                     DefaultDays = 10,
                     DateCreated = DateTime.Now,

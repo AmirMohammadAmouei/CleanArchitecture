@@ -21,7 +21,7 @@ namespace HR.LeaveManagement.Persistence.DataBaseContext
             if (!optionsBuilder.IsConfigured)
             {
                 var connectionString =
-                    "Server=.\\AMIR ; InitialCatalog=HRLeaveManagementWithClean ; UserId=AmirFar ; Password=27101377";
+                    "Server=.\\AMIR ; Initial Catalog=HRLeaveManagementWithClean ; User Id=AmirFar ; Password=73719199";
                 optionsBuilder.UseSqlServer(connectionString);
             }
             base.OnConfiguring(optionsBuilder);

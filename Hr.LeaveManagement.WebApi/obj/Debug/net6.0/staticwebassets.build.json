@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yGzbI3KaHsnq2Can2XfvVrx1I8hgisX/XHkwBVrdOjE=",
+  "Source": "Hr.LeaveManagement.WebApi",
+  "BasePath": "_content/Hr.LeaveManagement.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
