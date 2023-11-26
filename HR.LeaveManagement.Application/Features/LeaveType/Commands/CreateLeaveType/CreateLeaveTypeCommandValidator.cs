@@ -16,15 +16,15 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeave
                 WithMessage("{PropertyName} is required").NotNull().MaximumLength(70)
                 .WithMessage("{PropertyName} must be fewer than 70 character");
 
-            RuleFor(x => x.DefaultDays).GreaterThan(100).
-                WithMessage("{PropertyName} cannot exceed 100").LessThan(1)
+            RuleFor(x => x.DefaultDays).LessThan(100).
+                WithMessage("{PropertyName} cannot exceed 100").GreaterThan(1)
                 .WithMessage("{PropertyName} cannot be less than 1");
 
 
             RuleFor(x => x).
-                MustAsync(LeaveTypeNameUnique).WithMessage("Leave type alredy exists");
+                MustAsync(LeaveTypeNameUnique).WithMessage("Leave type already exists");
 
-           
+
         }
 
         private Task<bool> LeaveTypeNameUnique(CreateLeaveTypeCommand command, CancellationToken token)
