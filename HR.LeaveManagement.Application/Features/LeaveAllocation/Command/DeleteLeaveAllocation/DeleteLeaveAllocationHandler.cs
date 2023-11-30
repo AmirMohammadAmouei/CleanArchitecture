@@ -6,7 +6,7 @@ using MediatR;
 
 namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Command.DeleteLeaveAllocation
 {
-    public class DeleteLeaveAllocationHandler : IRequestHandler<DeleteLeaveTypeCommand>
+    public class DeleteLeaveAllocationHandler : IRequestHandler<DeleteLeaveAllocationCommand,Unit>
     {
         private readonly IMapper _mapper;
         private readonly ILeaveAllocationRepository _leaveAllocationRepository;
@@ -17,7 +17,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Command.Delete
             _leaveAllocationRepository = leaveAllocationRepository;
         }
 
-        public async Task<Unit> Handle(DeleteLeaveTypeCommand request, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(DeleteLeaveAllocationCommand request, CancellationToken cancellationToken)
         {
             var findLeaveAllocationById = await _leaveAllocationRepository.GetByIdAsync(request.Id);
 
@@ -25,8 +25,8 @@ namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Command.Delete
                 throw new NotFoundException(nameof(findLeaveAllocationById), request.Id);
 
             await _leaveAllocationRepository.DeleteAsync(findLeaveAllocationById);
-            return Unit.Value;
 
+            return Unit.Value;
         }
     }
 }
