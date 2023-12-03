@@ -1,7 +1,6 @@
-﻿namespace HR.LeaveManagement.Application.Models.Identity
+﻿namespace HR.LeaveManagement.Application.Models.Identity;
+
+public class RegistrationResponse
 {
-    public class RegistrationResponse
-    {
-        public string UserId { get; set; }
-    }
+    public string UserId { get; set; }
 }

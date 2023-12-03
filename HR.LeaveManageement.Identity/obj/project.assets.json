@@ -3190,9 +3190,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CleanArchitectureProject\\HR.LeaveManageement.Identity\\HR.LeaveManageement.Identity.csproj",
-      "projectName": "HR.LeaveManageement.Identity",
-      "projectPath": "F:\\CleanArchitectureProject\\HR.LeaveManageement.Identity\\HR.LeaveManageement.Identity.csproj",
+      "projectUniqueName": "F:\\CleanArchitectureProject\\HR.LeaveManageement.Identity\\HR.LeaveManagement.Identity.csproj",
+      "projectName": "HR.LeaveManagement.Identity",
+      "projectPath": "F:\\CleanArchitectureProject\\HR.LeaveManageement.Identity\\HR.LeaveManagement.Identity.csproj",
       "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
       "outputPath": "F:\\CleanArchitectureProject\\HR.LeaveManageement.Identity\\obj\\",
       "projectStyle": "PackageReference",

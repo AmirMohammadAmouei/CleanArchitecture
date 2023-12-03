@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hr.LeaveManagement.WebApi",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Infrastructure", "HR.LeaveManagement.Infrastructure\HR.LeaveManagement.Infrastructure.csproj", "{E7DD2F93-26B6-468B-9B2F-743B6CD7D8CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManageement.Identity", "HR.LeaveManageement.Identity\HR.LeaveManageement.Identity.csproj", "{1B3BC540-6063-4BBD-A6D2-EBE4D99EC3B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Identity", "HR.LeaveManageement.Identity\HR.LeaveManagement.Identity.csproj", "{1B3BC540-6063-4BBD-A6D2-EBE4D99EC3B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
