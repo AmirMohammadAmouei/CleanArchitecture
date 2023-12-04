@@ -6,6 +6,7 @@ using HR.LeaveManagement.Application.Identity;
 using HR.LeaveManagement.Application.Models.Identity;
 using HR.LeaveManagement.Identity.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
 namespace HR.LeaveManagement.Identity.Services
@@ -16,10 +17,10 @@ namespace HR.LeaveManagement.Identity.Services
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _singInManager;
 
-        public AuthService(JWTSettings jwtSettings, UserManager<ApplicationUser> userManager,
+        public AuthService(IOptions<JWTSettings> jwtSettings, UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> singInManager)
         {
-            _jwtSettings = jwtSettings;
+            _jwtSettings = jwtSettings.Value;
             _userManager = userManager;
             _singInManager = singInManager;
         }
@@ -41,7 +42,7 @@ namespace HR.LeaveManagement.Identity.Services
                 throw new BadRequestException($"Credential for '{request.Email} aren't valid'.");
             }
 
-            JwtSecurityToken token = await GenerateTokken(user);
+            JwtSecurityToken token = await GenerateToken(user);
 
             var response = new AuthResponse
             {
@@ -85,7 +86,7 @@ namespace HR.LeaveManagement.Identity.Services
             }
         }
 
-        private async Task<JwtSecurityToken> GenerateTokken(ApplicationUser user)
+        private async Task<JwtSecurityToken> GenerateToken(ApplicationUser user)
         {
             //Get userClaims list
             var userClaims = await _userManager.GetClaimsAsync(user);
